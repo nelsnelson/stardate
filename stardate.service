@@ -1,0 +1,13 @@
+[Unit]
+Description=stardate
+
+[Service]
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStart=${HOME}/.stardate
+ExecStop=/bin/kill -s TERM $MAINPID
+PIDFile=/var/run/stardate.pid
+PrivateTmp=true
+WorkingDirectory=${HOME}/.stardate
+
+[Install]
+WantedBy=multi-user.target
