@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-stardate_repository='git@github.com:nelsnelson/stardate.git';
+stardate_repository='https://gitlab.com/nelsnelson/stardate.git';
 target_directory="${HOME}/.stardate";
 server='stardate.py';
 wd=`pwd`;
